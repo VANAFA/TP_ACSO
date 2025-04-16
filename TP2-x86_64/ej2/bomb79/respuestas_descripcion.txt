@@ -1,0 +1,30 @@
+Valentino Nallib Fadel
+vfadel@udesa.edu.ar
+
+Fase 1
+
+Hay una función que pasa si el input es igual a un string hardcodeado. La función strings_not_equal verifica si el input coincide con la frase guardada.
+
+Fase 2
+
+Hay que ingresar 2 números que cumplan una condición en el código, num1 + num2 - 32 = rdi. aparte los signos tenían que ser opuestos para pasar otra prueba con un xor. En la función misterio ocurre la magia con la comparación entre los números.
+
+Fase 3
+
+Fue horrible. usando el comando x/s y poniendo las direcciones de memoria que aparecen en los comentarios se puede encontrar que hay que usar una palabara y un número, el número tenía que ser uno específico (799) para que funcione. A partir de este número es que hice un código para ver que ese número cumpla la relación que tenía que tener con la palabra, que está en la función cuenta, entonces pasé la función readlines y cuenta a un archivo en c para (con el número 799 harcodeado) hacerle un bruteforce de todas las palabras posibles, porque otra condición era que la palabra esté en palabras.txt. La palabra Debatir daba 799, por lo que ese número tenía que ser igual al que yo pusiese de input.
+
+Fase 4
+
+La fase 4 tenía un recorrido con un array con el que tuve que encontrar el camino en 5 pasos para llegar al 15, de ahí el segundo número era el resultado de la suma de todos los números por los que se pasa por el array para dar ese resultado.
+
+Fase secreta
+
+Para llegar a la fase secreta hice el camino inverso para encontrar cómo llegar a ella, me encontré con una dirección de memoria que al pedirla me daba el string abrete_sesamo, y otra dirección que apuntaba a un formato de input s% d% s%, osea que el segundo input que era "debatir 799" tenía que tener un string seguido, entonces puse el abrete_sesamo. De ahí la función secret pedía un input el cuál tenía que ser un número que al llegar al árbol de nodos en la función fun7 me devolviese el número 2, osea que tenía que multiplicar por uno a 2 en el return. De ahí salió. Ah, y también era condición que el input de la fase 4 tuviese 4 cosas, en mi caso 4 ints cualquiera.
+
+Pero finalmente se logró detener al Conde de MonteCristo.
+
+En inglés (original): https://youtu.be/ZV6En82Kxis?si=CjS2CuM9C0pXGLLK
+
+Español Latino: https://youtu.be/5CaUoXEwS3Y?si=nHbdWQueFaBdi0g0
+
+Para más información sobre el procedimiento de cómo desarmé la bomba está mi libreta en "mis notas del tp bomba.pdf" en este mismo directorio.
