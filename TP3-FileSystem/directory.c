@@ -6,7 +6,7 @@
 #include <string.h>
 #include <assert.h>
 
-#define DIRSIZ 14
+#define DIRSIZ sizeof(((struct direntv6 *)0)->d_name)
 
 int directory_findname(struct unixfilesystem *fs, const char *name,
         int dirinumber, struct direntv6 *dirEnt) {
